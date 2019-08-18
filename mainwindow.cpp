@@ -34,7 +34,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_SendButton_clicked()
 {
     cout << ui->Insert->text().toStdString() <<endl;
-    sendJSON("INSERT",ui->Insert->text().toStdString());
+    sendJSON("INSERT",ui->Insert->text().toStdString().c_str());
 }
 
 
@@ -97,7 +97,7 @@ int MainWindow::sendJSON(string KEY, string data){
     struct json_object *tempRecibido;
     json_object *parsed_jsonRecibido = json_tokener_parse(recvBuff);
     json_object_object_get_ex(parsed_jsonRecibido, "RECIBIDO", &tempRecibido);
-    if (json_object_get_int(tempRecibido) != 0){
+    if (json_object_get_string(tempRecibido) != nullptr){
         cout << json_object_get_string(tempRecibido) << endl;
     }
 
