@@ -44,11 +44,18 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     int sendJSON(string KEY, string data);
+    int sendJSONedit(string pos, string data);
 
 private slots:
     void on_SendButton_clicked();
 
     void on_SendInsertL_clicked();
+
+    void on_SendEditL_clicked();
+
+    void on_SendGetFromL_clicked();
+
+    void on_SendDeleteFirstL_clicked();
 
 private:
     Ui::MainWindow *ui;
