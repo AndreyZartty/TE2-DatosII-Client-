@@ -115,6 +115,20 @@ int MainWindow::sendJSON(string KEY, string data){
     }
 
 
+    struct json_object *tempInsertadoABB;
+    json_object *parsed_jsonInsertadoABB = json_tokener_parse(recvBuff);
+    json_object_object_get_ex(parsed_jsonInsertadoABB, "INSERTADO_ABB", &tempInsertadoABB);
+    if (json_object_get_string(tempInsertadoABB) != nullptr){
+        cout << json_object_get_string(tempInsertadoABB) << endl;
+    }
+    struct json_object *tempEliminadoABB;
+    json_object *parsed_jsonEliminadoABB = json_tokener_parse(recvBuff);
+    json_object_object_get_ex(parsed_jsonEliminadoABB, "ELIMINADO_ABB", &tempEliminadoABB);
+    if (json_object_get_string(tempEliminadoABB) != nullptr){
+        cout << json_object_get_string(tempEliminadoABB) << endl;
+    }
+
+
 
     ///Se limpian los Buffers
     memset(recvBuff, 0, MAXDATASIZE);
@@ -222,7 +236,19 @@ void MainWindow::on_SendGetFromL_clicked()
     ui->PosToGetL->clear();
 }
 
+void MainWindow::on_SendInsertABB_clicked()
+{
+    sendJSON("INSERT_ABB",ui->InsertABB->text().toStdString().c_str());
+    ui->InsertABB->clear();
+}
+
 void MainWindow::on_SendDeleteFirstL_clicked()
 {
     sendJSON("DELETE_LIST","Borrar");
+}
+
+void MainWindow::on_SendDeleteABB_clicked()
+{
+    sendJSON("DELETE_ABB",ui->DeleteABB->text().toStdString().c_str());
+    ui->DeleteABB->clear();
 }

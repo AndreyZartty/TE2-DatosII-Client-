@@ -57,6 +57,10 @@ private slots:
 
     void on_SendDeleteFirstL_clicked();
 
+    void on_SendInsertABB_clicked();
+
+    void on_SendDeleteABB_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

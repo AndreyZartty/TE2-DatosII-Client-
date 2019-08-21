@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>497</width>
-    <height>356</height>
+    <width>625</width>
+    <height>313</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,203 +19,262 @@
      <rect>
       <x>20</x>
       <y>0</y>
-      <width>314</width>
-      <height>295</height>
+      <width>571</width>
+      <height>247</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_6">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
      <item>
-      <widget class="QLabel" name="label_6">
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>Norasi</family>
-         <pointsize>16</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Lista</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
+        <widget class="QLabel" name="label_6">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Norasi</family>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Lista</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <widget class="QLabel" name="label_4">
-             <property name="font">
-              <font>
-               <family>Norasi</family>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Insertar al principio de la lista</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
              <item>
-              <widget class="QLineEdit" name="InsertL"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="SendInsertL">
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <family>Norasi</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="text">
-                <string>Insertar</string>
+                <string>Insertar al principio de la lista</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLineEdit" name="InsertL"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="SendInsertL">
+                 <property name="text">
+                  <string>Insertar</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>Norasi</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                 <strikeout>false</strikeout>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="text">
+                <string>Modificar en la lista</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Posición:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="PosToEditL"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Nuevo Dato:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="NewDataL"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="SendEditL">
+                 <property name="text">
+                  <string>Modificar</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
           </layout>
          </item>
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
            <item>
-            <widget class="QLabel" name="label_3">
-             <property name="font">
-              <font>
-               <family>Norasi</family>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <italic>false</italic>
-               <bold>true</bold>
-               <underline>false</underline>
-               <strikeout>false</strikeout>
-               <kerning>true</kerning>
-              </font>
-             </property>
-             <property name="text">
-              <string>Modificar en la lista</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
              <item>
-              <widget class="QLabel" name="label">
+              <widget class="QLabel" name="label_5">
                <property name="font">
                 <font>
+                 <family>Norasi</family>
+                 <pointsize>12</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="text">
-                <string>Posición:</string>
+                <string>Obtener por posición</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="PosToEditL"/>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_2">
-               <property name="font">
-                <font>
-                 <weight>75</weight>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="text">
-                <string>Nuevo Dato:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLineEdit" name="NewDataL"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="SendEditL">
-               <property name="text">
-                <string>Modificar</string>
-               </property>
-              </widget>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLineEdit" name="PosToGetL"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="SendGetFromL">
+                 <property name="text">
+                  <string>Obtener</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SendDeleteFirstL">
+             <property name="minimumSize">
+              <size>
+               <width>60</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Eliminar el Primero</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
         </layout>
        </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>Norasi</family>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Arbol Binario de Búsqueda</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
            <item>
-            <widget class="QLabel" name="label_5">
-             <property name="font">
-              <font>
-               <family>Norasi</family>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Obtener por posición</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
+            <widget class="QLineEdit" name="InsertABB"/>
            </item>
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QLineEdit" name="PosToGetL"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="SendGetFromL">
-               <property name="text">
-                <string>Obtener</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
+            <widget class="QPushButton" name="SendInsertABB">
+             <property name="text">
+              <string>Insertar Dato</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
          <item>
-          <widget class="QPushButton" name="SendDeleteFirstL">
-           <property name="minimumSize">
-            <size>
-             <width>60</width>
-             <height>60</height>
-            </size>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="text">
-            <string>Eliminar el Primero</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLineEdit" name="DeleteABB"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SendDeleteABB">
+             <property name="text">
+              <string>Eliminar Dato</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
@@ -229,7 +288,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>497</width>
+     <width>625</width>
      <height>22</height>
     </rect>
    </property>
