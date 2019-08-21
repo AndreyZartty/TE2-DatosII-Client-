@@ -33,8 +33,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_SendButton_clicked()
 {
-    cout << ui->Insert->text().toStdString() <<endl;
-    sendJSON("INSERT",ui->Insert->text().toStdString().c_str());
+    sendJSON("INSERT_LIST",ui->InsertL->text().toStdString().c_str());
 }
 
 
@@ -109,4 +108,9 @@ int MainWindow::sendJSON(string KEY, string data){
 
     ::close(fd);
 
+}
+
+void MainWindow::on_SendInsertL_clicked()
+{
+    sendJSON("INSERT_LIST",ui->InsertL->text().toStdString().c_str());
 }

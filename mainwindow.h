@@ -48,6 +48,8 @@ public:
 private slots:
     void on_SendButton_clicked();
 
+    void on_SendInsertL_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
